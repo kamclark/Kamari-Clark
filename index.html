@@ -29,6 +29,9 @@
             <a href="index.html">Home</a>
           </li>
           <li>
+            <a href="http://www.github.com/kamclark">Github</a>
+          </li>
+          <li>
             <a href="resume.pdf">Resume</a>
           </li>
         </ul>
@@ -36,6 +39,9 @@
       <ul class="side-nav" id="mobile-nav">
         <li>
           <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="http://www.github.com/kamclark">Github</a>
         </li>
         <li>
           <a href="resume.pdf">Resume</a>
@@ -87,8 +93,62 @@
   <!-- Section: Main -->
   <section class="section section-main">
     <div class="container">
+
       <!-- Row 1 -->
       <div class="row row-1">
+        <div class="col m6 hide-on-small-only">
+          <div class="img-content">
+            <h3>Cats</h3>
+                      Python based 2D obstacle avoidance game with scoring logic and collision and boundary detection and increasing difficulty.
+          </div>
+        </div>
+        <div class="col m6">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/cats.png" alt="">
+              <!-- <span class="card-title">Cats</span> -->
+              <a href="#app1" class="btn-floating halfway-fab waves-effect waves-light red modal-trigger">
+                <i class="material-icons">search</i>
+              </a>
+            </div>
+            <div class="card-content">
+              <p>
+                Python | Pygame | Git
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="row row-2">
+        <div class="col m6">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/facerec.jpg" alt="">
+              <!-- <span class="card-title">Facial Recognition App</span> -->
+              <a href="#app2" class="btn-floating halfway-fab waves-effect waves-light red modal-trigger">
+                <i class="material-icons">search</i>
+              </a>
+            </div>
+            <div class="card-content">
+              <p>
+                Python | Git
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col m6 hide-on-small-only">
+          <div class="img-content">
+            <h3>Facial Recognition App</h3>
+            Loads an image and produces a greyscale version to allow detection of faces and draws an outline. Image processing using Python's OpenCV module
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Row 3 -->
+      <div class="row row-3">
         <div class="col m6 hide-on-small-only">
           <div class="img-content">
             <h3>Baseball Simulator</h3>
@@ -102,7 +162,7 @@
             <div class="card-image">
               <img src="img/baseball.jpg" alt="">
               <!-- <span class="card-title">Baseball Simulator</span> -->
-              <a href="#app1" class="btn-floating halfway-fab waves-effect waves-light red modal-trigger">
+              <a href="#app3" class="btn-floating halfway-fab waves-effect waves-light red modal-trigger">
                 <i class="material-icons">search</i>
               </a>
             </div>
@@ -115,14 +175,14 @@
         </div>
       </div>
 
-      <!-- Row 2 -->
-      <div class="row row-2">
+      <!-- Row 4 -->
+      <div class="row row-4">
         <div class="col m6">
           <div class="card">
             <div class="card-image">
               <img src="img/calculator.png" alt="">
               <!-- <span class="card-title">Calculator</span> -->
-              <a href="#app2" class="btn-floating halfway-fab waves-effect waves-light red modal-trigger">
+              <a href="#app4" class="btn-floating halfway-fab waves-effect waves-light red modal-trigger">
                 <i class="material-icons">search</i>
               </a>
             </div>
@@ -142,8 +202,8 @@
         </div>
       </div>
 
-      <!-- Row 3 -->
-      <div class="row row-3">
+      <!-- Row 5 -->
+      <div class="row row-5">
         <div class="col m6 hide-on-small-only">
           <div class="img-content">
             <h3>Marketplace App</h3>
@@ -156,7 +216,7 @@
             <div class="card-image">
               <img src="img/marketplace.png" alt="">
               <!-- <span class="card-title">Marketplace</span> -->
-              <a href="#app3" class="btn-floating halfway-fab waves-effect waves-light red modal-trigger">
+              <a href="#app5" class="btn-floating halfway-fab waves-effect waves-light red modal-trigger">
                 <i class="material-icons">search</i>
               </a>
             </div>
@@ -169,14 +229,14 @@
         </div>
       </div>
 
-      <!-- Row 4 -->
-      <div class="row row-4">
+      <!-- Row 6 -->
+      <div class="row row-6">
         <div class="col m6">
           <div class="card">
             <div class="card-image">
               <img src="img/storefront.png" alt="">
               <!-- <span class="card-title">Online Store</span> -->
-              <a href="#app4" class="btn-floating halfway-fab waves-effect waves-light red modal-trigger">
+              <a href="#app6" class="btn-floating halfway-fab waves-effect waves-light red modal-trigger">
                 <i class="material-icons">search</i>
               </a>
             </div>
@@ -234,7 +294,7 @@
     </div>
     <div class="footer-copyright">
       <div class="container">
-        © 2018 by Kamari Clark
+        © 2019 by Kamari Clark
         <a class="grey-text text-lighten-4 right" href="#!"></a>
       </div>
     </div>
@@ -242,6 +302,33 @@
 
   <!-- Modal 1 -->
   <div id="app1" class="modal">
+    <div class="modal-content">
+      <h4>Cats Game</h4>
+      <img src="img/cats.png" alt="" class="responsive-img">
+      Python based 2D obstacle avoidance game with scoring logic and collision and boundary detection and increasing difficulty.
+    </div>
+    <div class="modal-footer">
+      <p>
+        <a href="https://github.com/kamclark/Cats">Github Link</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Modal 2 -->
+  <div id="app2" class="modal">
+    <div class="modal-content">
+      <h4>Facial Recognition App</h4>
+      <img src="img/facerec.jpg" alt="" class="responsive-img">            Loads an image and produces a greyscale version to allow detection of faces and draws an outline. Image processing using Python's OpenCV module
+    </div>
+    <div class="modal-footer">
+      <p>
+        <a href="https://github.com/kamclark/FaceDetector">Github Link</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Modal 3 -->
+  <div id="app3" class="modal">
     <div class="modal-content">
       <h4>Baseball Simulator</h4>
       <img src="img/baseballexample.gif" alt="" class="responsive-img"> Desktop application simulating the outcome of a baseball
@@ -255,8 +342,8 @@
     </div>
   </div>
 
-  <!-- Modal 2 -->
-  <div id="app2" class="modal">
+  <!-- Modal 4 -->
+  <div id="app4" class="modal">
     <div class="modal-content">
       <h4>Calculator</h4>
       <img src="img/calculatorexample.gif" alt="" class="responsive-img"> Desktop application of a full functioning calculator with basic
@@ -269,8 +356,8 @@
     </div>
   </div>
 
-  <!-- Modal 3 -->
-  <div id="app3" class="modal">
+  <!-- Modal 5 -->
+  <div id="app5" class="modal">
     <div class="modal-content">
       <h4>Marketplace</h4>
       <img src="img/marketplace.png" alt="" class="responsive-img"> Online marketplace which allows users to explore items uploaded by other users and sort by category or seller.
@@ -283,8 +370,8 @@
     </div>
   </div>
 
-  <!-- Modal 4 -->
-  <div id="app4" class="modal">
+  <!-- Modal 6 -->
+  <div id="app6" class="modal">
     <div class="modal-content">
       <h4>Online Store</h4>
       <img src="img/storefrontexample.gif" alt="" class="responsive-img"> Web application simulating online storefront using MVC pattern.
@@ -336,6 +423,20 @@
         },
         {
           selector: '.row-4',
+          offset: 400,
+          callback: function(el) {
+            Materialize.fadeInImage($(el));
+          }
+        },
+        {
+          selector: '.row-5',
+          offset: 400,
+          callback: function(el) {
+            Materialize.fadeInImage($(el));
+          }
+        },
+        {
+          selector: '.row-6',
           offset: 400,
           callback: function(el) {
             Materialize.fadeInImage($(el));
