@@ -12,7 +12,26 @@
 
 .transparent-text {
   color: transparent !important; }
+  
+  /* */
+  /*
+  /* kamari!
+  /*
+  /* */ 
+.title-row {
+  color: white;
+  text-align: center;
+  font-style: italic;
+  font-family: 'Hind';
+}
 
+hr.section-break {
+  border-color: 1px solid pink;
+  border-top: 1px solid pink;
+  border-bottom: 1px solid pink;
+
+
+}
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Set default font family to sans-serif.

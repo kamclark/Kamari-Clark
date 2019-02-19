@@ -5,6 +5,11 @@
   <!--Import Google Fonts-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
+
+
+  <!-- Theme for github calendar CSS -->
+  <link rel="stylesheet" href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css">
 
   <!--Import materialize.css-->
   <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
@@ -94,12 +99,36 @@
   <section class="section section-main">
     <div class="container">
 
+
+            <div class="row title-row">
+              <div class="col m12 hide-on-small-only"><h2>Github Activity</h2></div>
+            </div>
+      <!-- Row for Github activity -->
+      <div class="row git-row">
+        <div class="col m12 hide-on-small-only">
+
+          <!-- <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a> -->
+
+          <br>
+          <div class="calendar">
+            <!-- Loading placeholder -->
+            Loading user data.
+          </div>
+        </div>
+      </div>
+
+      <hr class="section-break">
+
+      <div class="row title-row">
+        <div class="col m12 hide-on-small-only"><h2>Projects</h2></div>
+      </div>
+
       <!-- Row 1 -->
       <div class="row row-1">
         <div class="col m6 hide-on-small-only">
           <div class="img-content">
             <h3>Cats</h3>
-                      Python based 2D obstacle avoidance game with scoring logic and collision and boundary detection and increasing difficulty.
+            Python based 2D obstacle avoidance game with scoring logic and collision and boundary detection and increasing difficulty.
           </div>
         </div>
         <div class="col m6">
@@ -141,7 +170,8 @@
         <div class="col m6 hide-on-small-only">
           <div class="img-content">
             <h3>Facial Recognition App</h3>
-            Script that allows you to load an image and produce a greyscale version for effective face detection. Counts faces, draws a visible outline around detected faces and allows for creation of new image files based on cropping original images . Image processing uses Python's OpenCV module.
+            Script that allows you to load an image and produce a greyscale version for effective face detection. Counts faces, draws a visible outline around detected faces and allows for creation of new image files based on cropping original
+            images . Image processing uses Python's OpenCV module.
           </div>
         </div>
       </div>
@@ -318,7 +348,8 @@
   <div id="app2" class="modal">
     <div class="modal-content">
       <h4>Facial Recognition App</h4>
-      <img src="img/facerec.jpg" alt="" class="responsive-img">            Script that allows you to load an image and produce a greyscale version for effective face detection. Counts faces, draws a visible outline around detected faces and allows for creation of new image files based on cropping original images . Image processing uses Python's OpenCV module.
+      <img src="img/facerec.jpg" alt="" class="responsive-img"> Script that allows you to load an image and produce a greyscale version for effective face detection. Counts faces, draws a visible outline around detected faces and allows for creation
+      of new image files based on cropping original images . Image processing uses Python's OpenCV module.
     </div>
     <div class="modal-footer">
       <p>
@@ -387,6 +418,12 @@
   </div>
 
 
+  <!-- github calendar container -->
+  <script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
+
+  <script>
+    new GitHubCalendar(".calendar", "kamclark");
+  </script>
 
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
