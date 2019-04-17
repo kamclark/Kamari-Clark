@@ -5268,29 +5268,34 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   stroke-linecap: round;
   /*shape-rendering: crispEdges;*/ }
 
-
-/* specific body elements */
+/* ==========================================================================
+/* specific body elements  */
 body {
   background: #a06e91;
   color: #ffffff; }
 
+ .section-main a{
+  color:#003399;
+  text-decoration: underline; }
+  
 .main-header {
   background: url(../img/stardust.png);
   color: #fff;
   font-family: 'Bungee', cursive;
   height: 300px;
   margin-bottom: 30px; }
-  .main-header h1 {
-    margin: 0;
-    padding-top: 30px; }
+  
+.main-header h1 {
+  margin: 0;
+  padding-top: 30px; }
 
 #employment-status {
-        padding: 0.023em 0.023em 0.023em 0.023em;
-        color: white;
-        background-color: #2cab1b;
-        /* background-color: #B1364F; */
-        border-radius: 0.3em;
-    }
+  padding: 0.023em 0.023em 0.023em 0.023em;
+  color: white;
+  background-color: #2cab1b;
+  /* background-color: #B1364F; */
+  border-radius: 0.3em; }
+    
 .img-content {
   display: flex;
   flex-direction: column;
@@ -5300,20 +5305,24 @@ body {
 .card-content {
   color: #00796b; }
 
-.page-footer {
-  background: #212121; }
-  .page-footer .footer-copyright {
-    background: #424242; }
-
-    .page-footer img {
-    width: 1.6em;
-  }
-
 .modal {
   color: #333; }
+.modal a {
+  text-decoration: underline;
+  color: #003399;
+}
 
 .row-1,
 .row-2,
-.row-3
+.row-3,
 .row-4 {
   opacity: 0; }
+
+.page-footer {
+  background: #212121; }
+    
+.page-footer .footer-copyright {
+  background: #424242; }
+        
+.page-footer img {
+  width: 1.6em;}
