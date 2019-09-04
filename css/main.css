@@ -5302,6 +5302,10 @@ body {
   justify-content: center;
   height: 300px; }
 
+.project-image{
+  height: 100%;
+  width: 100%;
+}
 .card-content {
   color: #00796b; }
 
@@ -5316,7 +5320,7 @@ body {
 .row-2,
 .row-3,
 .row-4 {
-  opacity: 0; }
+  opacity: 100; }
 
 .page-footer {
   background: #212121; }
