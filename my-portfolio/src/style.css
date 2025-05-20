@@ -1,0 +1,193 @@
+/* =================== Theme Variables =================== */
+:root {
+  /* Layout */
+  --max-width: 800px;
+  --gutter: 1.25rem;
+  --radius: 6px;
+
+  /* Colors */
+  --bg-page: rgb(115, 128, 234);
+  --bg-header: #000;
+  --bg-footer: #357ab8;
+  --fg-body: #222;
+  --link: #139eee;
+  --bg-window: #dfdfdf;
+  --accent-window: #2563ff;
+  --shadow-window: #c5caf7;
+  --accent-header: #090cbc;
+  --bg-card: #000;
+  --tag-bg: hsl(265, 61%, 61%);
+  --tag-fg: #fff;
+  --fg-muted: #0bc4d5;
+  --white: #ffffff;
+}
+
+/* =================== Reset & Base =================== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  background: var(--bg-page);
+  color: var(--fg-body);
+  line-height: 1.6;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-footer {
+  background: var(--bg-footer);
+  padding: var(--gutter);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  z-index: 100;
+  /* Optional: add a subtle shadow for separation */
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.08);
+}
+
+/* =================== Utilities =================== */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--gutter);
+}
+.site-header {
+  background: var(--bg-header);
+}
+.site-header h1 a {
+  color: var(--accent-window);
+  font-weight: bold;
+}
+.site-footer {
+  background: var(--bg-footer);
+  padding: var(--gutter);
+}
+.footer-grid {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* =================== Sections =================== */
+section h2 {
+  color: var(--white);
+}
+
+.intro-text {
+  margin-top: var(--gutter);
+}
+
+/* =================== Window Component =================== */
+.window {
+  width: 280px;
+  margin: var(--gutter) auto;
+  background: var(--bg-window);
+  border-radius: var(--radius);
+  box-shadow:
+    0 0 0 1px rgba(0,0,0,0.05),
+    8px 8px 0 var(--shadow-window);
+  overflow: hidden;
+}
+.window-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--accent-window);
+  color: #fff;
+  padding: 0.5rem 0.75rem;
+  font-weight: 600;
+}
+.window-header .dot {
+  width: 0.6rem;
+  height: 0.6rem;
+  background: #111;
+  border-radius: 50%;
+  margin-left: 0.3rem;
+}
+.window-content {
+  padding: var(--gutter);
+}
+.window-content ol {
+  list-style: none;
+  counter-reset: item;
+}
+.window-content li {
+  counter-increment: item;
+  margin-bottom: 0.75rem;
+  position: relative;
+  padding-left: 1.6rem;
+}
+.window-content li::before {
+  content: counter(item) ".";
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+  color: var(--accent-window);
+}
+
+/* =================== Project Cards =================== */
+.project-card {
+  margin-bottom: 2rem;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--bg-window);
+}
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--accent-header);
+  color: #fff;
+  padding: 0.75rem 1rem;
+}
+.card-header .external-link {
+  color: var(--link);
+  font-weight: 500;
+}
+.card-body {
+  padding: var(--gutter);
+  color: #000000;
+}
+.project-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--gutter);
+}
+
+.project-info .logo {
+  width: 15rem;
+  height: 10rem;
+  margin-right: var(--gutter);
+  border-radius: 4px;
+}
+.project-info .doc-link {
+  color: var(--tag-bg);
+  margin-left: 0.5rem;
+}
+.project-desc {
+  margin-bottom: 0.5rem;
+}
+.quote {
+  color: var(--fg-muted);
+  font-style: italic;
+  margin-bottom: var(--gutter);
+}
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.tags span {
+  background: var(--tag-bg);
+  color: var(--tag-fg);
+  padding: 0.4rem 0.8rem;
+  border-radius: 16px;
+  font-size: 0.85rem;
+}
