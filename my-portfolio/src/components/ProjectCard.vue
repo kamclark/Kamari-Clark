@@ -7,10 +7,12 @@
     <div class="card-body">
       <div class="project-info">
         <img :src="logo" alt="logo" class="logo"/>
-        <a :href="docs" class="doc-link" target="_blank">Link - Documentation</a>
-      </div>
-      <p class="project-desc">{{ desc }}</p>
+        <p class="project-desc">{{ desc }}</p>
       <p class="quote">"{{ quote }}"</p>
+        
+      </div>
+      <a :href="docs" class="doc-link" target="_blank">Documentation - README.md</a>
+      <!-- <a :href="docs" class="doc-link" target="_blank">Link - Documentation</a> -->
       <div class="tags">
         <span v-for="tag in tags" :key="tag">{{ tag }}</span>
       </div>

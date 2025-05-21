@@ -7,7 +7,7 @@
         <h2>## About Me</h2>
         <UserMeta
           employer="Self"
-          :skills="['Kotlin','TypeScript','Python','AWS']"
+          :skills="['Kotlin','C#','Python','AWS', 'SQL', 'Vue.js']"
         />
         <p class="intro-text">
           Learn about my code<br/>
@@ -50,12 +50,13 @@ export default {
       projects: [
         {
           title: 'Transit App',
-          github:'https://github.com/…',
-          logo:  'https://placehold.co/200x150',
-          docs:   '#',
-          desc:   'Real Time Transit Tracking App',
-          quote:  'Possibly the best app ever…',
-          tags:   ['Typescript','Vue.js','SQL','AWS']
+          github:'https://github.com/kamclark/transit-tracker/',
+          // logo:  'https://placehold.co/200x150',
+          logo:  'https://freerangestock.com/sample/123226/train-display-board-.jpg',
+          docs:   'https://github.com/kamclark/transit-tracker/blob/main/README.md',
+          desc:   'Request proxmity-based updates for nearby train and bus route departures with customizable schedule metrics and severe delay warnings.',
+          quote:  'More accurate than the official app!',
+          tags:   ['Django','Vue.js','SQL','AWS']
         },
       ]
     }
@@ -65,4 +66,7 @@ export default {
 
 <style>
 @import './style.css'; /* or break into component-scoped CSS */
+p:hover {
+  /* cursor: pointer */
+}
 </style>

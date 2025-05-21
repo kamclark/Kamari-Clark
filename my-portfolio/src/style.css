@@ -29,8 +29,9 @@
   padding: 0;
 }
 body {
-  font-family: Arial, sans-serif;
+  font-family: Monaco, Roboto, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   background: var(--bg-page);
+  padding-top: 70px;
   color: var(--fg-body);
   line-height: 1.6;
 }
@@ -59,13 +60,37 @@ ul {
   margin: 0 auto;
   padding: var(--gutter);
 }
+
 .site-header {
-  background: var(--bg-header);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: var(--bg-header, #000); /* fallback to black if variable not set */
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); /* optional: subtle shadow for separation */
 }
+
+.site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 800px; /* or your preferred width */
+  margin: 0 auto;
+  padding: 1rem 1.25rem;
+}
+
 .site-header h1 a {
   color: var(--accent-window);
   font-weight: bold;
 }
+
+.header-logo {
+  height: 40px;
+  width: auto;
+}
+
 .site-footer {
   background: var(--bg-footer);
   padding: var(--gutter);
@@ -173,6 +198,7 @@ section h2 {
 }
 .project-desc {
   margin-bottom: 0.5rem;
+  padding-right: 1rem;
 }
 .quote {
   color: var(--fg-muted);
@@ -180,6 +206,7 @@ section h2 {
   margin-bottom: var(--gutter);
 }
 .tags {
+  padding-top: 1rem;
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
@@ -190,4 +217,21 @@ section h2 {
   padding: 0.4rem 0.8rem;
   border-radius: 16px;
   font-size: 0.85rem;
+}
+
+.site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* Optional: add padding or max-width as needed */
+}
+
+.site-header h1 {
+  margin: 0;
+}
+
+.header-logo {
+  height: 40px; /* Adjust as needed */
+  width: auto;
+  /* Optional: add margin or other styles */
 }
