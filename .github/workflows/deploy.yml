@@ -1,0 +1,39 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1) Checkout your source code
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      # 2) Use the right Node version
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18 
+
+      # 3) Install dependencies
+      - name: Install dependencies
+        run: npm ci
+
+      # 4) Build your Vite app
+      - name: Build
+        run: npm run build
+
+      # 5) Deploy the `dist/` folder to the `gh-pages` branch
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          # This token is auto-created by GitHub; no manual secrets needed
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          # Optionally specify the target branch (defaults to gh-pages)
+          publish_branch: gh-pages
