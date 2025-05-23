@@ -8,7 +8,6 @@
   /* Colors */
   --bg-page: rgb(115, 128, 234);
   --bg-header: #000;
-  --bg-footer: #357ab8;
   --fg-body: #222;
   --link: #139eee;
   --bg-window: #dfdfdf;
@@ -23,7 +22,9 @@
 }
 
 /* =================== Reset & Base =================== */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -40,7 +41,8 @@ body {
 /* =================== Utilities =================== */
 .container {
   max-width: var(--max-width);
-  margin: 0 auto; /* center container in middle */
+  margin: 0 auto;
+  /* center container in middle */
   padding: var(--gutter);
 }
 
@@ -68,7 +70,8 @@ section h2 {
 }
 
 .header-logo {
-  height: 40px; /* Adjust as needed */
+  height: 40px;
+  /* Adjust as needed */
   width: auto;
   /* Optional: add margin or other styles */
 }

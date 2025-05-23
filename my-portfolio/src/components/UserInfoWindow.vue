@@ -11,8 +11,9 @@
         <li><strong>Employer:</strong> {{ currentEmployer }}</li>
         <li><strong>Skills:</strong> [{{ skills.join(", ") }}]</li>
         <li>
-        <strong>Contact:</strong>
-          For any professional inquiries, work inquests or just to say "hey.....", ping me at
+          <strong>Contact:</strong>
+          For any professional inquiries, work inquests or just to say "hey.....", ping me
+          at
           <a href="mailto:kamnmclark@gmail.com">kamnmclark@gmail.com</a>.
         </li>
       </ol>
@@ -38,9 +39,7 @@ export default {
   margin: var(--gutter) auto;
   background: var(--bg-window);
   border-radius: var(--radius);
-  box-shadow:
-    0 0 0 1px rgba(0,0,0,0.05),
-    8px 8px 0 var(--shadow-window);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 8px 8px 0 var(--shadow-window);
   overflow: hidden;
 }
 .user-info-window-header {
@@ -53,7 +52,7 @@ export default {
   font-weight: 600;
 }
 .user-info-window-controls .dot {
-  display:inline-block;
+  display: inline-block;
   width: 0.7rem;
   height: 0.7rem;
   background: #111;
@@ -81,5 +80,4 @@ export default {
   font-weight: bold;
   color: var(--accent-window);
 }
-
 </style>

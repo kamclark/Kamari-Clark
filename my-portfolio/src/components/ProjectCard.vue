@@ -34,7 +34,6 @@ export default {
 </script>
 
 <style scoped>
-
 /* =================== Project Cards =================== */
 .project-card {
   /* max-width: 280px; */
