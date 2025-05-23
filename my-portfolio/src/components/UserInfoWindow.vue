@@ -31,5 +31,55 @@ export default {
 </script>
 
 <style scoped>
-/* copy in your .window, .window-header, etc. rules here */
+/* =================== User Info Window =================== */
+.user-info-window {
+  width: 30rem;
+  max-width: 250px;
+  margin: var(--gutter) auto;
+  background: var(--bg-window);
+  border-radius: var(--radius);
+  box-shadow:
+    0 0 0 1px rgba(0,0,0,0.05),
+    8px 8px 0 var(--shadow-window);
+  overflow: hidden;
+}
+.user-info-window-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--accent-window);
+  color: #fff;
+  padding: 0.5rem 0.75rem;
+  font-weight: 600;
+}
+.user-info-window-controls .dot {
+  display:inline-block;
+  width: 0.7rem;
+  height: 0.7rem;
+  background: #111;
+  border-radius: 70%;
+  margin-left: 0.3rem;
+}
+
+.user-info-window-content {
+  padding: var(--gutter);
+}
+.user-info-window-content ol {
+  list-style: none;
+  counter-reset: item;
+}
+.user-info-window-content li {
+  counter-increment: item;
+  margin-bottom: 0.75rem;
+  position: relative;
+  padding-left: 1.6rem;
+}
+.user-info-window-content li::before {
+  content: counter(item) ".";
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+  color: var(--accent-window);
+}
+
 </style>

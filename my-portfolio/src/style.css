@@ -44,34 +44,7 @@ body {
   padding: var(--gutter);
 }
 
-.site-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  background: var(--bg-header, #000); /* fallback to black if variable unset */
-  z-index: 1000;
-}
 
-.site-header .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 1rem 1.25rem;
-}
-
-.site-header h1 a {
-  color: var(--accent-window);
-  font-weight: bold;
-}
-
-.header-logo {
-  height: 40px;
-  width: auto;
-}
 
 /* =================== Sections =================== */
 section h2 {
@@ -81,119 +54,6 @@ section h2 {
 .intro-text {
   margin-top: 1.3rem;
   margin-bottom: 1.3rem;
-}
-
-/* =================== User Info Window =================== */
-.user-info-window {
-  width: 30rem;
-  max-width: 250px;
-  margin: var(--gutter) auto;
-  background: var(--bg-window);
-  border-radius: var(--radius);
-  box-shadow:
-    0 0 0 1px rgba(0,0,0,0.05),
-    8px 8px 0 var(--shadow-window);
-  overflow: hidden;
-}
-.user-info-window-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: var(--accent-window);
-  color: #fff;
-  padding: 0.5rem 0.75rem;
-  font-weight: 600;
-}
-.user-info-window-controls .dot {
-  display:inline-block;
-  width: 0.7rem;
-  height: 0.7rem;
-  background: #111;
-  border-radius: 70%;
-  margin-left: 0.3rem;
-}
-
-.user-info-window-content {
-  padding: var(--gutter);
-}
-.user-info-window-content ol {
-  list-style: none;
-  counter-reset: item;
-}
-.user-info-window-content li {
-  counter-increment: item;
-  margin-bottom: 0.75rem;
-  position: relative;
-  padding-left: 1.6rem;
-}
-.user-info-window-content li::before {
-  content: counter(item) ".";
-  position: absolute;
-  left: 0;
-  font-weight: bold;
-  color: var(--accent-window);
-}
-
-/* =================== Project Cards =================== */
-.project-card {
-  /* max-width: 280px; */
-  border-radius: var(--radius);
-  overflow: hidden;
-  background: var(--bg-window);
-}
-.card-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: var(--accent-header);
-  color: #fff;
-  padding: 0.75rem 1rem;
-}
-.card-header .external-link {
-  color: var(--link);
-  font-weight: 500;
-}
-.card-body {
-  padding: var(--gutter);
-  color: #000000;
-}
-.project-info {
-  display: flex;
-  align-items: center;
-  margin-bottom: var(--gutter);
-}
-
-.project-info .thumbnail {
-  width: 15rem;
-  height: 10rem;
-  margin-right: var(--gutter);
-  border-radius: 4px;
-}
-.project-info .doc-link {
-  color: var(--tag-bg);
-  margin-left: 0.5rem;
-}
-.project-desc {
-  margin-bottom: 0.5rem;
-  padding-right: 1rem;
-}
-.quote {
-  color: var(--fg-muted);
-  font-style: italic;
-  margin-bottom: var(--gutter);
-}
-.tags {
-  padding-top: 1rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-.tags span {
-  background: var(--tag-bg);
-  color: var(--tag-fg);
-  padding: 0.4rem 0.8rem;
-  border-radius: 16px;
-  font-size: 0.85rem;
 }
 
 .site-header .container {
@@ -211,24 +71,4 @@ section h2 {
   height: 40px; /* Adjust as needed */
   width: auto;
   /* Optional: add margin or other styles */
-}
-
-@media (max-width: 600px) {
-  .project-info {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: var(--gutter);
-  }
-
-  .project-info .thumbnail {
-    width: 100%;
-    height: auto;
-    margin: 0;
-  }
-
-  .project-desc {
-    padding-right: 0;
-    margin-bottom: 0.5rem;
-  }
 }

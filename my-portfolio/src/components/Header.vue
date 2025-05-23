@@ -24,4 +24,33 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: var(--bg-header, #000); /* fallback to black if variable unset */
+  z-index: 1000;
+}
+
+.site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem 1.25rem;
+}
+
+.site-header h1 a {
+  color: var(--accent-window);
+  font-weight: bold;
+}
+
+.header-logo {
+  height: 40px;
+  width: auto;
+}
+</style>
