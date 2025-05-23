@@ -110,8 +110,8 @@ section h2 {
 }
 
 /* =================== Window Component =================== */
-.window {
-  width: 280px;
+.user-info-window {
+  width: 30rem;
   margin: var(--gutter) auto;
   background: var(--bg-window);
   border-radius: var(--radius);
@@ -120,7 +120,7 @@ section h2 {
     8px 8px 0 var(--shadow-window);
   overflow: hidden;
 }
-.window-header {
+.user-info-window-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -129,27 +129,27 @@ section h2 {
   padding: 0.5rem 0.75rem;
   font-weight: 600;
 }
-.window-header .dot {
+.user-info-window-header .dot {
   width: 0.6rem;
   height: 0.6rem;
   background: #111;
   border-radius: 50%;
   margin-left: 0.3rem;
 }
-.window-content {
+.user-info-window-content {
   padding: var(--gutter);
 }
-.window-content ol {
+.user-info-window-content ol {
   list-style: none;
   counter-reset: item;
 }
-.window-content li {
+.user-info-window-content li {
   counter-increment: item;
   margin-bottom: 0.75rem;
   position: relative;
   padding-left: 1.6rem;
 }
-.window-content li::before {
+.user-info-window-content li::before {
   content: counter(item) ".";
   position: absolute;
   left: 0;

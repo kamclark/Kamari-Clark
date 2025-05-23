@@ -1,27 +1,27 @@
 <template>
   <header class="site-header">
     <div class="container">
-      <h1><a href="#">{{ title }}</a></h1>
-            <img src="/logo.png" alt="Logo" class="header-logo" />
+      <h1>
+        <a href="#">{{ title }}</a>
+      </h1>
     </div>
   </header>
 </template>
 
 <script>
 export default {
-  name: 'SiteHeader',
+  name: "SiteHeader",
   props: {
     title: {
       type: String,
-      default: 'KC'
+      default: "KC",
     },
     logoURL: {
       type: String,
-      default: ''
-    }
-  }
-}
+      default: "vue.svg",
+    },
+  },
+};
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

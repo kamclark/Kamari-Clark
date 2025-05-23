@@ -1,13 +1,13 @@
 <template>
-  <SiteHeader title="KC" />
+  <SiteHeader title="Kamari Clark" />
 
   <main>
     <div class="container">
       <section class="about">
         <h2>## About Me</h2>
         <UserMeta
-          employer="Self"
-          :skills="['Kotlin','C#','Python','AWS', 'SQL', 'Vue.js']"
+          currentEmployer="Self"
+          :skills="['C#','Python', 'Django', 'Kotlin', 'SQL', 'Vue.js', 'AWS']"
         />
         <p class="intro-text">
           Learn about my code<br/>
@@ -32,13 +32,11 @@
       </section>
     </div>
   </main>
-
-  <!-- <SiteFooter :projects="projects.map(p => p.title)" /> -->
 </template>
 
 <script>
 import SiteHeader  from './components/Header.vue'
-import UserMeta    from './components/UserMetadata.vue'
+import UserMeta    from './components/UserInfoWindow.vue'
 import ProjectCard from './components/ProjectCard.vue'
 import SiteFooter  from './components/Footer.vue'
 
@@ -67,6 +65,6 @@ export default {
 <style>
 @import './style.css'; /* or break into component-scoped CSS */
 p:hover {
-  /* cursor: pointer */
+  cursor: pointer
 }
 </style>

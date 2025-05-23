@@ -6,13 +6,11 @@
     </div>
     <div class="card-body">
       <div class="project-info">
-        <img :src="logo" alt="logo" class="logo"/>
+        <img :src="logo" alt="logo" class="logo" />
         <p class="project-desc">{{ desc }}</p>
-      <p class="quote">"{{ quote }}"</p>
-        
+        <p class="quote">"{{ quote }}"</p>
       </div>
       <a :href="docs" class="doc-link" target="_blank">Documentation - README.md</a>
-      <!-- <a :href="docs" class="doc-link" target="_blank">Link - Documentation</a> -->
       <div class="tags">
         <span v-for="tag in tags" :key="tag">{{ tag }}</span>
       </div>
@@ -22,17 +20,17 @@
 
 <script>
 export default {
-  name: 'ProjectCard',
+  name: "ProjectCard",
   props: {
     title: { type: String, required: true },
-    github:{ type: String, required: true },
-    logo:  { type: String, required: true },
-    docs:  { type: String, required: true },
-    desc:  { type: String, required: true },
-    quote: { type: String, default: '' },
-    tags:  { type: Array,  default: () => [] }
-  }
-}
+    github: { type: String, required: true },
+    logo: { type: String, required: true },
+    docs: { type: String, required: true },
+    desc: { type: String, required: true },
+    quote: { type: String, default: "" },
+    tags: { type: Array, default: () => [] },
+  },
+};
 </script>
 
 <style scoped>
