@@ -1,0 +1,77 @@
+/* =================== Theme Variables =================== */
+:root {
+  /* Layout */
+  --max-width: 800px;
+  --gutter: 1.25rem;
+  --radius: 6px;
+
+  /* Colors */
+  --bg-page: rgb(115, 128, 234);
+  --bg-header: #000;
+  --fg-body: #222;
+  --link: #139eee;
+  --bg-window: #dfdfdf;
+  --accent-window: #2563ff;
+  --shadow-window: #c5caf7;
+  --accent-header: #090cbc;
+  --bg-card: #000;
+  --tag-bg: hsl(265, 61%, 61%);
+  --tag-fg: #fff;
+  --fg-muted: #0bc4d5;
+  --white: #ffffff;
+}
+
+/* =================== Reset & Base =================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Monaco, Roboto, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background: var(--bg-page);
+  padding-top: 70px;
+  color: var(--fg-body);
+  line-height: 1.6;
+}
+
+/* =================== Utilities =================== */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  /* center container in middle */
+  padding: var(--gutter);
+}
+
+
+
+/* =================== Sections =================== */
+section h2 {
+  color: var(--white);
+}
+
+.intro-text {
+  margin-top: 1.3rem;
+  margin-bottom: 1.3rem;
+}
+
+.site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* Optional: add padding or max-width as needed */
+}
+
+.site-header h1 {
+  margin: 0;
+}
+
+.header-logo {
+  height: 40px;
+  /* Adjust as needed */
+  width: auto;
+  /* Optional: add margin or other styles */
+}
