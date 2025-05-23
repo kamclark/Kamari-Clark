@@ -6,7 +6,7 @@
     </div>
     <div class="card-body">
       <div class="project-info">
-        <img :src="logo" alt="logo" class="logo" />
+        <img :src="thumbnailURL" alt="project thumbnail" class="thumbnail" />
         <p class="project-desc">{{ desc }}</p>
         <p class="quote">"{{ quote }}"</p>
       </div>
@@ -24,7 +24,7 @@ export default {
   props: {
     title: { type: String, required: true },
     github: { type: String, required: true },
-    logo: { type: String, required: true },
+    thumbnailURL: { type: String, required: true },
     docs: { type: String, required: true },
     desc: { type: String, required: true },
     quote: { type: String, default: "" },

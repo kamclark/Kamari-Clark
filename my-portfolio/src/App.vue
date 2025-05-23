@@ -23,7 +23,7 @@
           :key="i"
           :title="p.title"
           :github="p.github"
-          :logo="p.logo"
+          :thumbnailURL="p.thumbnailURL"
           :docs="p.docs"
           :desc="p.desc"
           :quote="p.quote"
@@ -49,7 +49,7 @@ export default {
         {
           title: 'Transit App',
           github:'https://github.com/kamclark/transit-tracker/',
-          // logo:  'https://placehold.co/200x150',
+          thumbnailURL: './trains.jpg',
           logo:  'https://freerangestock.com/sample/123226/train-display-board-.jpg',
           docs:   'https://github.com/kamclark/transit-tracker/blob/main/README.md',
           desc:   'Request proxmity-based updates for nearby train and bus route departures with customizable schedule metrics and severe delay warnings.',

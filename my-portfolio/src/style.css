@@ -186,7 +186,7 @@ section h2 {
   margin-bottom: var(--gutter);
 }
 
-.project-info .logo {
+.project-info .thumbnail {
   width: 15rem;
   height: 10rem;
   margin-right: var(--gutter);
