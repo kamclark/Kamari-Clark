@@ -28,6 +28,7 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   font-family: Monaco, Roboto, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   background: var(--bg-page);
@@ -36,28 +37,10 @@ body {
   line-height: 1.6;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.site-footer {
-  background: var(--bg-footer);
-  padding: var(--gutter);
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100vw;
-  z-index: 100;
-  /* Optional: add a subtle shadow for separation */
-  box-shadow: 0 -2px 8px rgba(0,0,0,0.08);
-}
-
 /* =================== Utilities =================== */
 .container {
   max-width: var(--max-width);
-  margin: 0 auto;
+  margin: 0 auto; /* center container in middle */
   padding: var(--gutter);
 }
 
@@ -67,16 +50,15 @@ ul {
   left: 0;
   right: 0;
   width: 100%;
-  background: var(--bg-header, #000); /* fallback to black if variable not set */
+  background: var(--bg-header, #000); /* fallback to black if variable unset */
   z-index: 1000;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08); /* optional: subtle shadow for separation */
 }
 
 .site-header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 800px; /* or your preferred width */
+  max-width: 800px;
   margin: 0 auto;
   padding: 1rem 1.25rem;
 }
@@ -91,27 +73,20 @@ ul {
   width: auto;
 }
 
-.site-footer {
-  background: var(--bg-footer);
-  padding: var(--gutter);
-}
-.footer-grid {
-  display: flex;
-  justify-content: space-between;
-}
-
 /* =================== Sections =================== */
 section h2 {
   color: var(--white);
 }
 
 .intro-text {
-  margin-top: var(--gutter);
+  margin-top: 1.3rem;
+  margin-bottom: 1.3rem;
 }
 
-/* =================== Window Component =================== */
+/* =================== User Info Window =================== */
 .user-info-window {
   width: 30rem;
+  max-width: 250px;
   margin: var(--gutter) auto;
   background: var(--bg-window);
   border-radius: var(--radius);
@@ -129,13 +104,15 @@ section h2 {
   padding: 0.5rem 0.75rem;
   font-weight: 600;
 }
-.user-info-window-header .dot {
-  width: 0.6rem;
-  height: 0.6rem;
+.user-info-window-controls .dot {
+  display:inline-block;
+  width: 0.7rem;
+  height: 0.7rem;
   background: #111;
-  border-radius: 50%;
+  border-radius: 70%;
   margin-left: 0.3rem;
 }
+
 .user-info-window-content {
   padding: var(--gutter);
 }
@@ -159,7 +136,7 @@ section h2 {
 
 /* =================== Project Cards =================== */
 .project-card {
-  margin-bottom: 2rem;
+  /* max-width: 280px; */
   border-radius: var(--radius);
   overflow: hidden;
   background: var(--bg-window);
@@ -234,4 +211,24 @@ section h2 {
   height: 40px; /* Adjust as needed */
   width: auto;
   /* Optional: add margin or other styles */
+}
+
+@media (max-width: 600px) {
+  .project-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--gutter);
+  }
+
+  .project-info .thumbnail {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  .project-desc {
+    padding-right: 0;
+    margin-bottom: 0.5rem;
+  }
 }
