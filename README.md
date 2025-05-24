@@ -1,5 +1,82 @@
-# Vue 3 + Vite
+# Personal Portfolio
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+A responsive developer portfolio built with [Vue 3](https://vuejs.org/) and [Vite](https://vitejs.dev/) with automated deployment to GitHub Pages via GitHub Actions.
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+---
+
+## See It
+
+View [this portfolio](https://kamclark.github.io/Kamari-Clark/) on GitHub Pages.
+
+---
+
+## Technologies Used
+
+- **Frontend Framework:** [Vue 3](https://vuejs.org/) (Composition API)
+- **Build Tool:** [Vite](https://vitejs.dev/)
+- **Styling:** CSS3
+- **Deployment:** GitHub Actions ([peaceiris/actions-gh-pages](https://github.com/peaceiris/actions-gh-pages))
+
+---
+
+## Features
+
+- **Responsive Design:**  
+  Mobile-first layout with adaptive project cards.
+- **Component-Based Architecture:**  
+  Modular Vue components for reusability and clarity.
+- **Accessible & Clean UI:**  
+  Focus on readability and usability.
+- **Automated Deployment:**  
+  CI/CD workflow that triggers deployment to GitHub Pages on builds.
+
+---
+
+## Getting Started
+
+How can YOU run this?
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v16 or higher recommended)
+- [npm](https://www.npmjs.com/)
+
+### Setup
+
+1. **Clone the repository:**
+    ```bash
+    git clone https://github.com/kamclark/Kamari-Clark.git
+    cd Kamari-Clark
+    ```
+
+2. **Install dependencies:**
+    ```bash
+    npm install
+    ```
+
+3. **Run the development server:**
+    ```bash
+    npm run dev
+    ```
+    Open [http://localhost:5173/](http://localhost:5173/) to view it in your browser.
+
+4. **Build for production:**
+    ```bash
+    npm run build
+    ```
+
+## 📋 Changelog
+
+What's changed?
+
+### [May '25]
+
+- Setup Vue 3 app with sections for About me and Projects in modular components
+
+---
+
+## 🛡️ License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
