@@ -22,7 +22,7 @@ jobs:
 
       # 3) Install dependencies
       - name: Install dependencies
-        run: npm ci --omit=optional
+        run: npm ci
 
       # 4) Build your Vite app
       - name: Build
