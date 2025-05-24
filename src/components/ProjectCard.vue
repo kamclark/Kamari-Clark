@@ -86,6 +86,8 @@ export default {
   font-style: italic;
   margin-bottom: var(--gutter);
   border-style: inset;
+  padding: .12rem;
+
 }
 .tags {
   padding-top: 1rem;
