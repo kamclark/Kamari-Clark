@@ -1,6 +1,6 @@
 <template>
-  <div class="user-info-window">
-    <header class="user-info-window-header">
+  <div class="user-info-window window">
+    <header class="user-info-window-header window-header">
       <span class="user-info-window-title">User Metadata</span>
       <div class="user-info-window-controls">
         <span class="dot" v-for="n in 3" :key="n"></span>
@@ -36,22 +36,9 @@ export default {
 .user-info-window {
   width: 30rem;
   max-width: 350px;
-  margin: var(--gutter) auto;
-  background: var(--bg-window);
-  border-radius: var(--radius);
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 8px 8px 0 var(--shadow-window);
-  overflow: hidden;
 }
-.user-info-window-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: var(--window-header);
-  color: #fff;
-  padding: 0.5rem 0.75rem;
-  font-weight: 600;
-}
-.user-info-window-controls .dot {
+
+.window .dot {
   display: inline-block;
   width: 0.7rem;
   height: 0.7rem;
