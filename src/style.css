@@ -11,13 +11,13 @@
   --fg-body: #222;
   --link: #139eee;
   --bg-window: #dfdfdf;
-  --accent-window: #2563ff;
+  --window-header: #2563ff;
   --shadow-window: #c5caf7;
   --accent-header: #090cbc;
   --bg-card: #000;
   --tag-bg: hsl(265, 61%, 61%);
   --tag-fg: #fff;
-  --fg-muted: #0bc4d5;
+  --fg-muted: #19886e;
   --white: #ffffff;
 }
 
@@ -38,15 +38,9 @@ body {
   line-height: 1.6;
 }
 
-/* =================== Utilities =================== */
-.container {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  /* center container in middle */
-  padding: var(--gutter);
+a {
+  color:var(--link)
 }
-
-
 
 /* =================== Sections =================== */
 section h2 {

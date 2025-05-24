@@ -1,11 +1,11 @@
 <template>
   <main>
-    <div class="container">
+    <div class="main-content">
       <section class="about">
         <h2>## About Me</h2>
-        <UserMeta
+        <UserData
           currentEmployer="Self"
-          :skills="['C#', 'Python', 'Django', 'Kotlin', 'SQL', 'Vue.js', 'AWS']"
+          :skills="['C#', 'Python', 'Vue.js', 'React.js', 'Kotlin', 'SQL', 'AWS']"
         />
         <p class="intro-text">
           Learn about my code<br />
@@ -25,6 +25,7 @@
           :docs="p.docs"
           :desc="p.desc"
           :quote="p.quote"
+          :quoteAuthor="p.quoteAuthor"
           :tags="p.tags"
         />
       </section>
@@ -33,13 +34,12 @@
 </template>
 
 <script>
-import SiteHeader from "../components/Header.vue";
-import UserMeta from "../components/UserInfoWindow.vue";
+import UserMetadata from "../components/UserInfoWindow.vue";
 import ProjectCard from "../components/ProjectCard.vue";
 
 export default {
   name: "HomeView",
-  components: { SiteHeader, UserMeta, ProjectCard },
+  components: { UserData: UserMetadata, ProjectCard },
   data() {
     return {
       projects: [
@@ -52,10 +52,20 @@ export default {
           desc:
             "Request proxmity-based updates for nearby train and bus route departures with customizable schedule metrics and severe delay warnings.",
           quote: "More accurate than the official app!",
-          tags: ["Django", "Vue.js", "SQL", "AWS"],
+          quoteAuthor: "Satisfied User",
+          tags: ["Django", "Vue.js", "Redis", "NoSQL", "AWS"],
         },
       ],
     };
   },
 };
 </script>
+
+<style>
+.main-content {
+  max-width: var(--max-width);
+  margin: 0 auto; /* center container in middle */
+  padding: var(--gutter); /* a little room before main content starts */
+}
+
+</style>

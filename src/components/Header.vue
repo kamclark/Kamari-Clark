@@ -1,6 +1,6 @@
 <template>
   <header class="site-header">
-    <div class="container">
+    <div class="header-container">
       <h1>
         <a href="#">{{ title }}</a>
       </h1>
@@ -14,7 +14,7 @@ export default {
   props: {
     title: {
       type: String,
-      default: "KC",
+      default: "K.C",
     },
     logoURL: {
       type: String,
@@ -25,6 +25,11 @@ export default {
 </script>
 
 <style scoped>
+
+h1 a{
+  color: white;
+}
+
 .site-header {
   position: fixed;
   top: 0;
@@ -35,22 +40,12 @@ export default {
   z-index: 1000;
 }
 
-.site-header .container {
+.site-header .header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   max-width: 800px;
   margin: 0 auto;
   padding: 1rem 1.25rem;
-}
-
-.site-header h1 a {
-  color: var(--accent-window);
-  font-weight: bold;
-}
-
-.header-logo {
-  height: 40px;
-  width: auto;
 }
 </style>

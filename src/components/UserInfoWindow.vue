@@ -46,7 +46,7 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: var(--accent-window);
+  background: var(--window-header);
   color: #fff;
   padding: 0.5rem 0.75rem;
   font-weight: 600;
@@ -78,6 +78,6 @@ export default {
   position: absolute;
   left: 0;
   font-weight: bold;
-  color: var(--accent-window);
+  color: var(--window-header);
 }
 </style>

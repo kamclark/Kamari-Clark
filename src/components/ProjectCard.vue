@@ -8,9 +8,13 @@
       <div class="project-info">
         <img :src="thumbnailURL" alt="project thumbnail" class="thumbnail" />
         <p class="project-desc">{{ desc }}</p>
-        <p class="quote">"{{ quote }}"</p>
+        <p class="project-blurb">"{{ quote }}"<br>
+        <br>
+        -{{ quoteAuthor }}
+        </p>
       </div>
-      <a :href="docs" class="doc-link" target="_blank">Documentation - README.md</a>
+      <span class="project-link-icon">📝</span
+      ><a :href="docs" class="doc-link" target="_blank">Project Readme</a>
       <div class="tags">
         <span v-for="tag in tags" :key="tag">{{ tag }}</span>
       </div>
@@ -28,6 +32,7 @@ export default {
     docs: { type: String, required: true },
     desc: { type: String, required: true },
     quote: { type: String, default: "" },
+    quoteAuthor: { type: String, default: "" },
     tags: { type: Array, default: () => [] },
   },
 };
@@ -44,7 +49,7 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: var(--accent-header);
+  background: var(--window-header);
   color: #fff;
   padding: 0.75rem 1rem;
 }
@@ -76,10 +81,11 @@ export default {
   margin-bottom: 0.5rem;
   padding-right: 1rem;
 }
-.quote {
+.project-blurb {
   color: var(--fg-muted);
   font-style: italic;
   margin-bottom: var(--gutter);
+  border-style: inset;
 }
 .tags {
   padding-top: 1rem;
@@ -93,6 +99,10 @@ export default {
   padding: 0.4rem 0.8rem;
   border-radius: 16px;
   font-size: 0.85rem;
+}
+
+.project-link-icon {
+  padding-right: 0.3rem;
 }
 
 @media (max-width: 600px) {
