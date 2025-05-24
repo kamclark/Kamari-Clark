@@ -72,6 +72,7 @@ What's changed?
 ### [May '25]
 
 - Setup Vue 3 app with sections for About me and Projects in modular components
+- Use Vue Router for page navigation
 
 ---
 
