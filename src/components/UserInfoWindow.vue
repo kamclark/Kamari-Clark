@@ -35,7 +35,7 @@ export default {
 /* =================== User Info Window =================== */
 .user-info-window {
   width: 30rem;
-  max-width: 250px;
+  max-width: 350px;
   margin: var(--gutter) auto;
   background: var(--bg-window);
   border-radius: var(--radius);

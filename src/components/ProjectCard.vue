@@ -36,7 +36,6 @@ export default {
 <style scoped>
 /* =================== Project Cards =================== */
 .project-card {
-  /* max-width: 280px; */
   border-radius: var(--radius);
   overflow: hidden;
   background: var(--bg-window);
